@@ -74,7 +74,7 @@ public class TesteIILogicaDisertativo2MagicSquare {
 				
 				for (colum = 0; colum < dimension; colum++) {
 					
-					System.out.println("Inserting matrix "+matrix[line][colum]);
+					System.out.print("Inserting matrix ["+line+"]["+colum+"]: "+matrix[line][colum]);
 					
 					matrix[line][colum] = read.nextInt();
 					
@@ -89,7 +89,7 @@ public class TesteIILogicaDisertativo2MagicSquare {
 			for (line=0; line<dimension; line++) { 
 				
 				for (colum=0; colum < dimension; colum++) {
-				
+					
 					System.out.print(matrix[line][colum]);
 				
 				}
@@ -99,8 +99,8 @@ public class TesteIILogicaDisertativo2MagicSquare {
 			}
 	
 			sumMainDimension=sumSecondarDimension=0;
-			System.out.println();
-			System.out.print("Waiting for sums of the main diagonals");
+			System.out.println("");
+			System.out.println("Sum of the main and the secondary diagonal");
 			
 			for (line=0; line < dimension; line++) {
 				
@@ -108,17 +108,15 @@ public class TesteIILogicaDisertativo2MagicSquare {
 				
 			}
 			
-			System.out.print("Waiting for sums of the secondary diagonals");
-			
 			for (line=0; line < dimension; line++) {
 				
 				sumSecondarDimension += matrix[line][dimension-line-1];
 				
 			}
+			System.out.println("The sum of main diagonal is "+sumMainDimension+" and secondary is "+sumSecondarDimension);
+			System.out.println();
 			
-			System.out.print("                                             ");
 			System.out.println("Analyzing sum of the lines: ");
-			
 			for(line=0; line<dimension; line++) {
 				
 				lineMatrix[line]=0;
@@ -130,7 +128,6 @@ public class TesteIILogicaDisertativo2MagicSquare {
 				}
 			}
 	
-			System.out.print("                                             ");
 			System.out.println("Totalit sum of the lines!");
 			
 			for (line=0; line < dimension; line++) {
@@ -139,7 +136,7 @@ public class TesteIILogicaDisertativo2MagicSquare {
 				
 			}
 			
-			System.out.print("                                             ");
+			System.out.println("");
 			System.out.println("Analyzing sum of the coluns: ");
 			
 			for(colum=0; colum<dimension; colum++) {
@@ -153,19 +150,14 @@ public class TesteIILogicaDisertativo2MagicSquare {
 				}
 			}
 	
-			System.out.print("                                             ");
 			System.out.println("Totalit sum of the coluns!");
-			
+			System.out.println();
 			for (line=0; line < dimension; line++) {
 				
 				System.out.println(columMatrix[line]);
 				
 			}	
 			
-			System.out.println();
-			System.out.println("The sum of main diagonal is "+sumMainDimension+" and secondary is "+sumSecondarDimension);
-
-
 			lineSum=columSum=1;
 			
 			for (line=1; line < dimension; line ++) {
