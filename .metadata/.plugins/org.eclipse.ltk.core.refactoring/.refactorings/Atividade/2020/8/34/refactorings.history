@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;Application.tmp&apos; to &apos;StringSample_SearchAndCleanString&apos;&#x0A;- Original project: &apos;Atividade&apos;&#x0A;- Original element: &apos;Application.tmp&apos;&#x0A;- Renamed element: &apos;Application.StringSample_SearchAndCleanString&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;tmp&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;Application{tmp.java[tmp" matchStrategy="1" name="StringSample_SearchAndCleanString" qualified="false" references="true" similarDeclarations="false" stamp="1597559129445" textual="false" version="1.0"/>
+</session>
