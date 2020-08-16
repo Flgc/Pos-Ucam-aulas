@@ -166,6 +166,8 @@ public class TesteIILogicaDisertativo2MagicSquare {
 			System.out.println("The sum of main diagonal is "+sumMainDimension+" and secondary is "+sumSecondarDimension);
 
 
+			System.out.print("                                             ");
+			System.out.println("Totalit sum of the coluns!");			
 			lineSum=columSum=1;
 			
 			for (line=1; line < dimension; line ++) {
@@ -180,15 +182,7 @@ public class TesteIILogicaDisertativo2MagicSquare {
 					}
 				}
 			}
-			
-			System.out.println();
-			if (lineSum==columSum && sumMainDimension == sumSecondarDimension && sumMainDimension == lineMatrix[0]) {
-				System.out.println("It's a magic square!");
-			}else {
-				System.out.println("It's not magic square");
-			}
 		}
-		
 		
 		read.close();
 	}

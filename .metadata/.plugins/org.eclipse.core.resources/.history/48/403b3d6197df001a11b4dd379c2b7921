@@ -189,7 +189,6 @@ public class TesteIILogicaDisertativo2MagicSquare {
 			}
 		}
 		
-		
 		read.close();
 	}
 

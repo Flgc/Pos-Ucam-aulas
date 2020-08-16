@@ -185,10 +185,9 @@ public class TesteIILogicaDisertativo2MagicSquare {
 			if (lineSum==columSum && sumMainDimension == sumSecondarDimension && sumMainDimension == lineMatrix[0]) {
 				System.out.println("It's a magic square!");
 			}else {
-				System.out.println("It's not magic square");
+				
 			}
 		}
-		
 		
 		read.close();
 	}
